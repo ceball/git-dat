@@ -92,6 +92,9 @@ $ git dat rm filename
 
 This removes the file from git-dat.json, but does not delete your copy of the file. (XXX rename command)
 
+## Future work
+
+Make it easier for the user to tell which files have been modified by him/herself vs. which files have been modified externally. Could do that by tracking previous hashes, maybe. Haven't thought about it yet.
 
 ## Why?
 
