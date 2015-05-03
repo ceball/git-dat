@@ -37,6 +37,21 @@ $ git dat status
 This will tell you about data files listed in git-dat.json that you do not already have,
 and about data files you have locally that differ from (or do not exist in) git-dat.json.
 
+```
+$ git dat status
+# git-dat is tracking 'my/data'
+#  ! my/data/652.xlsx
+#  ! my/data/556.xlsx
+#
+# --------------------
+#
+# * = local file differs from git-json.dat
+#   ('push' to update git-dat.json, or 'pull --force [filename]' to overwrite)
+# ! = local file missing
+#   (use 'pull [filename]')
+# ? = file not tracked in git-dat.json
+#   (use 'push filename' to start tracking)
+```
 
 ### Pull data files
 
