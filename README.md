@@ -67,8 +67,8 @@ If you already have a file at the same path as an entry in git-dat.json, your fi
 will not be overwritten. However, you can force overwriting of your own files by passing
 ``--force``. 
 
-Before you get an updated git-dat.json (e.g. via a ``git pull``), you should first
-``git dat push`` any of your modified data files (see below).
+To keep your life simple, *before* you get an updated git-dat.json (e.g. via a ``git pull``), you should first
+``git dat push`` (see below) any of your modified data files (see note in future work section).
 
 
 ### Push data files
