@@ -45,7 +45,8 @@ $ git dat pull
 ```
 
 This will get any data files listed in git-dat.json that you do not already
-have. 
+have. Depending on the amount of data to copy, this may take a few moments (at
+least the time it takes to copy the files into your repository).
 
 If you already have a file at the same path as an entry in git-dat.json, your file
 will not be overwritten. However, you can force overwriting of your own files by passing
