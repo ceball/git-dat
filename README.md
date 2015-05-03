@@ -26,6 +26,8 @@ This will ask you:
 * where on disk to store the hashed data (can be anywhere you want)
 * (if no git-data.json already exists) where in the repository you want the data directory
 
+Note that if you are using a repository that already contains a git-dat.json, you will be prompted to create the data directory (e.g. ``Could not load config file git-dat.json: Invalid data path (does 'data2' exist?)``) before you can run ``git dat init``.
+
 ### See the status of data files
 
 ```
