@@ -37,19 +37,19 @@ This will tell you about data files listed in git-dat.json that you do not alrea
 and about data files you have locally that differ from (or do not exist in) git-dat.json.
 
 ```
-$ git dat status
-# git-dat is tracking 'my/data'
+$ Tracking 'my/data'; status against git-dat.json (local)
 #  ! my/data/652.xlsx
 #  ! my/data/556.xlsx
 #
 # --------------------
 #
-# * = local file differs from git-json.dat
-#   ('push' to update git-dat.json, or 'pull --force [filename]' to overwrite)
-# ! = local file missing
-#   (use 'pull [filename]')
-# ? = file not tracked in git-dat.json
-#   (use 'push filename' to start tracking)
+#  * = local file differs from entry in git-json.dat
+#   ('dat push' to update git-dat.json, or delete your copy and 'dat pull')
+#  ! = no local copy of file listed in git-json.dat
+#   (use 'dat pull [filename]')
+#  ? = local file not tracked in git-dat.json
+#   (use 'dat push filename' to start tracking)
+# ?? = specified file does not exist and is not tracked in git-dat.json
 ```
 
 To learn about data files which are different from any particular version of git-dat.json, use ``--against treeish``. For instance, if ``git dat status`` shows you ``*`` for some files, but you don't know if that's
@@ -70,7 +70,7 @@ If you already have a file at the same path as an entry in git-dat.json, your fi
 will not be overwritten.
 
 To keep your life simple, *before* you get an updated git-dat.json (e.g. via a ``git pull``), you should first
-``git dat push`` (see below) any of your modified data files.
+``git dat push`` any of your modified data files (see below).
 
 
 ### Push data files
