@@ -8,9 +8,6 @@ Tracks a (git ignored) ``data`` directory in your existing project. When a data 
 
 NOTE: this is just a proof of concept for hashing out ideas!
 
-## Installation
-
-Visit https://github.com/ceball/git-dat/releases/latest and download the appropriate zip for your platform. git-dat is one binary file so all you need to do is put it on your path.
 
 ## Usage
 
