@@ -53,6 +53,10 @@ $ git dat status
 #   (use 'push filename' to start tracking)
 ```
 
+To learn about data files which are different from any particular version of git-dat.json, use ``--against treeish``. For instance, if ``git dat status`` shows you ``*`` for some files, but you don't know if that's
+because you have done a ``git dat pull`` or because you have made local modifications, you can pass ``--against HEAD~1`` to see which files differ from git-dat.json at HEAD~1. Any files that do not differ from e.g. HEAD~1
+(or any other committed version) can safely be deleted.
+
 ### Pull data files
 
 ```
@@ -64,8 +68,7 @@ have. Depending on the amount of data to copy, this may take a few moments (at
 least the time it takes to copy the files into your repository).
 
 If you already have a file at the same path as an entry in git-dat.json, your file
-will not be overwritten. However, you can force overwriting of your own files by passing
-``--force``. 
+will not be overwritten.
 
 To keep your life simple, *before* you get an updated git-dat.json (e.g. via a ``git pull``), you should first
 ``git dat push`` (see below) any of your modified data files (see note in future work section).
@@ -94,7 +97,7 @@ This removes the file from git-dat.json, but does not delete your copy of the fi
 
 ## Future work
 
-Make it easier for the user to tell which files have been modified by him/herself vs. which files have been modified externally. Could do that by tracking previous hashes, maybe. Haven't thought about it yet.
+Make it easier for the user to replace files for which the only change is from an external modification (i.e. update to git-dat.json). ``--force-overwrite-if-change-from treeish`` coming soon...
 
 ## Why?
 
