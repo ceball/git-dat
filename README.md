@@ -8,7 +8,7 @@ Tracks a (git ignored) ``data`` directory in your existing project. When a data 
 
 ## Installation
 
-Visit https://github.com/ceball/git-dat/releases/tag/v0.1 and download the appropriate zip. git-dat is one binary file so all you need to do is put it on your path.
+Visit https://github.com/ceball/git-dat/releases/latest and download the appropriate zip for your platform. git-dat is one binary file so all you need to do is put it on your path.
 
 ## Usage
 
