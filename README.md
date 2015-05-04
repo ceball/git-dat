@@ -6,7 +6,7 @@ Allow git to track large/binary files without storing their contents in git.
 
 Tracks a (git ignored) ``data`` directory in your existing project. When a data file is "git dat pushed", its sha1 is stored in a simple json file (git-dat.json) managed by git, and the file contents are copied to a local storage folder (outside your git repository). The local storage folder may safely be shared (e.g. via Syncthing or Bittorrent Sync) with other users of your git repository. The version of a data file people "git dat pull" depends on git-dat.json.
 
-NOTE: this is just a proof of concept for hashing out ideas!
+**NOTE: this is just a proof of concept for hashing out ideas!** (See 'Alternatives to git-dat' below.)
 
 
 ## Usage
