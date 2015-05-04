@@ -53,7 +53,7 @@ $ git dat status
 ```
 
 To learn about data files which are different from any particular version of git-dat.json, use ``--against treeish``. For instance, if ``git dat status`` shows you ``*`` for some files, but you don't know if that's
-because you have done a ``git pull`` or because you have made local modifications to those files, you can pass ``--against HEAD~1`` to see which files differ from git-dat.json at HEAD~1. Any files that do not differ from e.g. HEAD~1
+because you have done a ``git pull`` (causing git-dat.json to be updated with external changes) or because you have made local modifications to those files, you can pass ``--against HEAD~1`` to see which files differ from git-dat.json at HEAD~1. Any files that do not differ from e.g. HEAD~1
 (or any other committed version you choose to check) can safely be deleted.
 
 ### Pull data files
