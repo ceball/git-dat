@@ -91,9 +91,10 @@ available yet).
 To see the hash of any file (tracked or not):
 
 ```
-$ git dat inspect filename
+$ git dat inspect /path/to/filename1 filename2
+/path/to/filename1: f54ee8e79bad1e592b319eb890a47c7c27fd3cae
+filename2: 9dd560071aa17a68dcc74087644502d46dbd1167
 ```
-
 
 ### Stop tracking a data file
 
