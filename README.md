@@ -86,6 +86,15 @@ To push an untracked file, specify its name e.g. ``git dat push data/testfile``.
 all csv files in a particular directory, ``git dat push data/path/*.csv`` (note: no recursive processing
 available yet).
 
+### Inspect a data file
+
+To see the hash of any file (tracked or not):
+
+```
+$ git dat inspect filename
+```
+
+
 ### Stop tracking a data file
 
 ```
